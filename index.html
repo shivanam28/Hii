@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test code</title>
+</head>
+<body>
+    <h2>
+        Hello check you Maths!
+    </h2>
+    <button onclick="myFunc()">Check</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunc(){
+            let check,text;
+            while(check != 4){
+            check = prompt("2*2= ?","Type your Answer here!");
+            if(check==null || check==""){
+                text = "Not Entered Anything..";
+            }else{
+                text = "Congrats! You are correct..;)";
+            }
+        }
+        
+        document.getElementById("demo").innerHTML = text;
+        }
+        
+    </script>
+</body>
+</html>
